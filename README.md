@@ -3,6 +3,10 @@ The only executable that is provided is only for Linux.
 For macOS and Windows users, it is needed for the program to run to be compiled from scratch. 
 Linux users have that option too.
 On Linux, if the executable is not working due to permissions, the command "chmod +x fizzBuzzBizzLinux" should be able to fix the issue.
+To compile the C code into a executable on Windows using GCC, you have to run "gcc fizzbuzzbizz.c -o fizzbuzzbizz.exe" for the C code to be compiled.
+
+
+
 
 Copyright (C) 2026  Jakub Pokrievka
 
