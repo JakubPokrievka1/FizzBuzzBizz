@@ -3,11 +3,7 @@
 void fizzBuzzBizz(void) {
 	char fizzBuzzBizz[3][12] = {"Fizz", "Buzz", "Bizz"};
 	int divisionalValues[3] = {3, 5, 7};
-	float userValue = 0;
 	int lengthfizzBuzzBizz = sizeof(fizzBuzzBizz) / sizeof(fizzBuzzBizz[0]);
-
-	printf("Enter your integer value.\n>> ");
-	scanf("%f", &userValue);
 
 	for (int i = 0; i <= userValue; i++) {
 		int is_divisible = 1;
@@ -37,8 +33,29 @@ void fizzBuzzBizz(void) {
 
 
 
+void valueValidation(int *userValue) {
+	if (*userValue >= 0) {
+		fizzBuzzBizz(&*userValue);
+	} else {
+		printf("ERROR: INVALID INPUT ENTERED!\n");
+	}
+}
+
+
+
+void userInput(void) {
+	int userValue = 0;
+
+	printf("Enter your integer value.\n>> ");
+	scanf("%i", &userValue);
+
+	valueValidation(&userValue);
+}
+
+
+
 int main(void) {
-	fizzBuzzBizz();
+	userInput();
 
 	return 0;
 }
