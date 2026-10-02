@@ -3,7 +3,7 @@
 void fizzBuzzBizz(void) {
 	char fizzBuzzBizz[3][12] = {"Fizz", "Buzz", "Bizz"};
 	int divisionalValues[3] = {3, 5, 7};
-	int lengthfizzBuzzBizz = sizeof(fizzBuzzBizz) / sizeof(fizzBuzzBizz[0]);
+	size_t lengthfizzBuzzBizz = sizeof(fizzBuzzBizz) / sizeof(fizzBuzzBizz[0]);
 
 	for (int i = 0; i <= userValue; i++) {
 		int is_divisible = 1;
